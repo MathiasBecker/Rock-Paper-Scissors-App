@@ -1,0 +1,2386 @@
+.current-interactive {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.current-interactive .div {
+  background-color: #ffffff;
+  width: 10888px;
+  height: 6027px;
+  position: relative;
+}
+
+.current-interactive .SSP-landing {
+  position: absolute;
+  width: 1280px;
+  height: 832px;
+  top: 1491px;
+  left: 1051px;
+}
+
+.current-interactive .trial {
+  position: absolute;
+  width: 1280px;
+  height: 832px;
+  top: 1491px;
+  left: 7651px;
+  background-color: #fffbf2;
+  overflow: hidden;
+}
+
+.current-interactive .overlap {
+  position: absolute;
+  width: 1236px;
+  height: 803px;
+  top: 19px;
+  left: 24px;
+}
+
+.current-interactive .subtract {
+  position: absolute;
+  width: 1200px;
+  height: 750px;
+  top: 22px;
+  left: 16px;
+}
+
+.current-interactive .vector {
+  position: absolute;
+  width: 173px;
+  height: 216px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .img {
+  position: absolute;
+  width: 180px;
+  height: 239px;
+  top: 2px;
+  left: 1055px;
+}
+
+.current-interactive .group {
+  position: absolute;
+  width: 248px;
+  height: 469px;
+  top: 203px;
+  left: 117px;
+  background-color: #85a6f940;
+  border-radius: 60px;
+}
+
+.current-interactive .schere-comp {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 38px;
+  left: 26px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .overlap-group {
+  position: absolute;
+  width: 95px;
+  height: 69px;
+  top: 7px;
+  left: 82px;
+}
+
+.current-interactive .vector-2 {
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top: 34px;
+  left: 40px;
+}
+
+.current-interactive .group-2 {
+  position: absolute;
+  width: 85px;
+  height: 32px;
+  top: 37px;
+  left: 10px;
+}
+
+.current-interactive .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 36px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.current-interactive .text-wrapper-2 {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.current-interactive .text-wrapper-3 {
+  position: absolute;
+  width: 93px;
+  top: 0;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.9px;
+  line-height: normal;
+}
+
+.current-interactive .overlap-group-wrapper {
+  position: absolute;
+  width: 68px;
+  height: 87px;
+  top: -5px;
+  left: 8px;
+  transform: rotate(122.08deg);
+}
+
+.current-interactive .overlap-group-2 {
+  position: relative;
+  width: 119px;
+  height: 124px;
+  top: -23px;
+  left: -27px;
+}
+
+.current-interactive .group-3 {
+  position: absolute;
+  width: 95px;
+  height: 80px;
+  top: 22px;
+  left: 12px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .vector-3 {
+  position: absolute;
+  width: 24px;
+  height: 29px;
+  top: 53px;
+  left: 61px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .group-4 {
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  top: 67px;
+  left: 75px;
+}
+
+.current-interactive .subtract-2 {
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  top: 2px;
+  left: 0;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .subtract-3 {
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  top: 9px;
+  left: 0;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .vector-4 {
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  top: 54px;
+  left: 64px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .vector-5 {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  top: 51px;
+  left: 56px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .stein-comp {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 144px;
+  left: 26px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .papier-comp {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 252px;
+  left: 26px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .overlap-wrapper {
+  position: absolute;
+  width: 347px;
+  height: 469px;
+  top: 203px;
+  left: 395px;
+}
+
+.current-interactive .overlap-2 {
+  position: relative;
+  width: 345px;
+  height: 469px;
+  background-color: #03b58a1a;
+  border-radius: 60px;
+}
+
+.current-interactive .overlap-group-3 {
+  position: absolute;
+  width: 345px;
+  height: 59px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .rectangle {
+  position: absolute;
+  width: 345px;
+  height: 55px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .text-wrapper-4 {
+  position: absolute;
+  width: 32px;
+  top: 6px;
+  left: 156px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.current-interactive .vector-wrapper {
+  position: absolute;
+  width: 345px;
+  height: 229px;
+  top: 97px;
+  left: 0;
+  background-color: #03b58a33;
+}
+
+.current-interactive .vector-6 {
+  position: absolute;
+  width: 157px;
+  height: 110px;
+  top: 61px;
+  left: 94px;
+}
+
+.current-interactive .ellipse {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 358px;
+  left: 136px;
+  background-color: #03b58a33;
+  border-radius: 36px;
+}
+
+.current-interactive .div-wrapper {
+  position: absolute;
+  width: 347px;
+  height: 469px;
+  top: 203px;
+  left: 770px;
+}
+
+.current-interactive .overlap-3 {
+  position: relative;
+  width: 345px;
+  height: 469px;
+  background-color: #fe59001a;
+  border-radius: 60px;
+}
+
+.current-interactive .rectangle-2 {
+  position: absolute;
+  width: 345px;
+  height: 229px;
+  top: 97px;
+  left: 0;
+  background-color: #fe590033;
+}
+
+.current-interactive .overlap-group-4 {
+  position: absolute;
+  width: 345px;
+  height: 55px;
+  top: 2px;
+  left: 0;
+  background-image: url(./img/rectangle-19.svg);
+  background-size: 100% 100%;
+}
+
+.current-interactive .text-wrapper-5 {
+  position: absolute;
+  width: 247px;
+  top: 2px;
+  left: 49px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.current-interactive .ellipse-2 {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 358px;
+  left: 146px;
+  background-color: #fe590033;
+  border-radius: 36px;
+}
+
+.current-interactive .rectangle-3 {
+  position: absolute;
+  width: 585px;
+  height: 82px;
+  top: 102px;
+  left: 208px;
+  background-color: #fec94440;
+  border-radius: 60px;
+}
+
+.current-interactive .w-hle-eine-klasse {
+  position: absolute;
+  top: 123px;
+  left: 250px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #303030;
+  font-size: 16px;
+  letter-spacing: 2.56px;
+  line-height: normal;
+}
+
+.current-interactive .tipps {
+  position: absolute;
+  width: 56px;
+  height: 94px;
+  top: 102px;
+  left: 858px;
+}
+
+.current-interactive .overlap-group-5 {
+  position: relative;
+  height: 93px;
+}
+
+.current-interactive .ellipse-3 {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 0;
+  background-color: #303030;
+  border-radius: 28px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .text-wrapper-6 {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: normal;
+}
+
+.current-interactive .tutorial {
+  position: absolute;
+  width: 89px;
+  height: 94px;
+  top: 102px;
+  left: 936px;
+}
+
+.current-interactive .ellipse-4 {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 16px;
+  background-color: #303030;
+  border-radius: 28px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .trainiere {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 563px;
+  left: 143px;
+  background-color: #27476e;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .text-wrapper-7 {
+  position: absolute;
+  width: 124px;
+  top: 13px;
+  left: 36px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.current-interactive .vector-7 {
+  position: absolute;
+  width: 169px;
+  height: 129px;
+  top: 674px;
+  left: 547px;
+}
+
+.current-interactive .group-5 {
+  position: absolute;
+  width: 412px;
+  height: 485px;
+  top: -12276px;
+  left: -19209px;
+  background-image: url(./img/vector-21-55.png);
+  background-size: 100% 100%;
+}
+
+.current-interactive .overlap-group-6 {
+  position: absolute;
+  width: 159px;
+  height: 138px;
+  top: -11598px;
+  left: -19544px;
+}
+
+.current-interactive .vector-8 {
+  position: absolute;
+  width: 103px;
+  height: 138px;
+  top: 0;
+  left: 56px;
+}
+
+.current-interactive .vector-9 {
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  top: 103px;
+  left: 69px;
+}
+
+.current-interactive .vector-10 {
+  position: absolute;
+  width: 60px;
+  height: 49px;
+  top: 74px;
+  left: 0;
+}
+
+.current-interactive .group-6 {
+  position: absolute;
+  width: 52px;
+  height: 99px;
+  top: 250px;
+  left: 251px;
+}
+
+.current-interactive .subtract-4 {
+  position: absolute;
+  width: 19px;
+  height: 24px;
+  top: -11715px;
+  left: -19668px;
+}
+
+.current-interactive .subtract-5 {
+  position: absolute;
+  width: 29px;
+  height: 63px;
+  top: -11790px;
+  left: -19646px;
+}
+
+.current-interactive .group-7 {
+  position: absolute;
+  width: 531px;
+  height: 439px;
+  top: -11042px;
+  left: -19669px;
+}
+
+.current-interactive .group-8 {
+  position: absolute;
+  width: 121px;
+  height: 1px;
+  top: 831px;
+  left: 1159px;
+}
+
+.current-interactive .play {
+  position: absolute;
+  width: 1280px;
+  height: 832px;
+  top: 1491px;
+  left: 8971px;
+}
+
+.current-interactive .tipps-overlay {
+  position: absolute;
+  width: 999px;
+  height: 469px;
+  top: 2587px;
+  left: 7792px;
+  background-color: #feeec6;
+  border-radius: 60px;
+  border: 16px solid;
+  border-color: #303030;
+}
+
+.current-interactive .overlap-4 {
+  position: absolute;
+  width: 114px;
+  height: 130px;
+  top: 102px;
+  left: 280px;
+}
+
+.current-interactive .group-9 {
+  position: absolute;
+  width: 114px;
+  height: 110px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .text-wrapper-8 {
+  position: absolute;
+  top: 96px;
+  left: 3px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14.1px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  line-height: normal;
+}
+
+.current-interactive .overlap-5 {
+  position: absolute;
+  width: 185px;
+  height: 133px;
+  top: 275px;
+  left: 489px;
+}
+
+.current-interactive .group-10 {
+  position: absolute;
+  width: 111px;
+  height: 115px;
+  top: 0;
+  left: 38px;
+}
+
+.current-interactive .text-wrapper-9 {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14.1px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  line-height: normal;
+}
+
+.current-interactive .overlap-6 {
+  position: absolute;
+  width: 132px;
+  height: 134px;
+  top: 98px;
+  left: 434px;
+}
+
+.current-interactive .group-11 {
+  position: absolute;
+  width: 110px;
+  height: 116px;
+  top: 0;
+  left: 12px;
+}
+
+.current-interactive .text-wrapper-10 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14.1px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  line-height: normal;
+}
+
+.current-interactive .overlap-7 {
+  position: absolute;
+  width: 123px;
+  height: 131px;
+  top: 100px;
+  left: 596px;
+}
+
+.current-interactive .group-12 {
+  position: absolute;
+  width: 112px;
+  height: 113px;
+  top: 0;
+  left: 6px;
+}
+
+.current-interactive .text-wrapper-11 {
+  position: absolute;
+  top: 97px;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14.1px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  line-height: normal;
+}
+
+.current-interactive .overlap-8 {
+  position: absolute;
+  width: 111px;
+  height: 132px;
+  top: 276px;
+  left: 374px;
+}
+
+.current-interactive .group-13 {
+  position: absolute;
+  width: 111px;
+  height: 115px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .text-wrapper-12 {
+  position: absolute;
+  top: 98px;
+  left: 28px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14.1px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  line-height: normal;
+}
+
+.current-interactive .overlap-9 {
+  position: absolute;
+  width: 973px;
+  height: 66px;
+  top: -12px;
+  left: 11px;
+}
+
+.current-interactive .rectangle-4 {
+  position: absolute;
+  width: 973px;
+  height: 44px;
+  top: 22px;
+  left: 0;
+}
+
+.current-interactive .group-14 {
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: 22px;
+  left: 911px;
+}
+
+.current-interactive .overlap-group-7 {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  background-color: #fec944;
+  border-radius: 18.48px;
+}
+
+.current-interactive .text-wrapper-13 {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  font-family: "Rounded Mplus 1c Bold-Bold", Helvetica;
+  font-weight: 700;
+  color: #303030;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.current-interactive .text-wrapper-14 {
+  position: absolute;
+  top: 0;
+  left: 63px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fec944;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.current-interactive .SSP-main-tutorial {
+  left: 5011px;
+  position: absolute;
+  width: 1280px;
+  height: 832px;
+  top: 1491px;
+  background-color: #fffbf2;
+  overflow: hidden;
+}
+
+.current-interactive .group-15 {
+  position: absolute;
+  width: 256px;
+  height: 477px;
+  top: 199px;
+  left: 113px;
+}
+
+.current-interactive .SSP-tutorial {
+  position: absolute;
+  width: 248px;
+  height: 468px;
+  top: 203px;
+  left: 117px;
+  background-color: #fffbf2;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 16px solid;
+  border-color: #fec944;
+}
+
+.current-interactive .p {
+  position: absolute;
+  width: 160px;
+  top: 42px;
+  left: 44px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.current-interactive .text-wrapper-15 {
+  position: absolute;
+  width: 160px;
+  top: 138px;
+  left: 44px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.current-interactive .vector-11 {
+  position: absolute;
+  width: 168px;
+  height: 8px;
+  top: 123px;
+  left: 40px;
+}
+
+.current-interactive .weiter {
+  position: absolute;
+  width: 142px;
+  height: 53px;
+  top: 640px;
+  left: 170px;
+  background-color: #03b58a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .text-wrapper-16 {
+  position: absolute;
+  width: 122px;
+  top: 2px;
+  left: 10px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: normal;
+}
+
+.current-interactive .group-16 {
+  position: absolute;
+  width: 58px;
+  height: 94px;
+  top: 102px;
+  left: 858px;
+}
+
+.current-interactive .ellipse-5 {
+  background-color: #30303033;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 0;
+  border-radius: 28px;
+}
+
+.current-interactive .text-wrapper-17 {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #00000033;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: normal;
+}
+
+.current-interactive .group-17 {
+  position: absolute;
+  width: 91px;
+  height: 94px;
+  top: 102px;
+  left: 936px;
+}
+
+.current-interactive .ellipse-6 {
+  background-color: #30303033;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 16px;
+  border-radius: 28px;
+}
+
+.current-interactive .das-tutorial {
+  position: absolute;
+  width: 331px;
+  height: 43px;
+  top: 750px;
+  left: 885px;
+  background-color: #03b58a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .text-wrapper-18 {
+  position: absolute;
+  top: 2px;
+  left: 24px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: normal;
+}
+
+.current-interactive .group-18 {
+  left: -16569px;
+  background-image: url(./img/vector-21-55.png);
+  position: absolute;
+  width: 412px;
+  height: 485px;
+  top: -12276px;
+  background-size: 100% 100%;
+}
+
+.current-interactive .overlap-group-8 {
+  position: absolute;
+  width: 159px;
+  height: 138px;
+  top: -11598px;
+  left: -16904px;
+}
+
+.current-interactive .subtract-6 {
+  position: absolute;
+  width: 19px;
+  height: 24px;
+  top: -11715px;
+  left: -17028px;
+}
+
+.current-interactive .subtract-7 {
+  position: absolute;
+  width: 29px;
+  height: 63px;
+  top: -11790px;
+  left: -17006px;
+}
+
+.current-interactive .group-19 {
+  left: -17029px;
+  position: absolute;
+  width: 531px;
+  height: 439px;
+  top: -11042px;
+}
+
+.current-interactive .SSP-main-tutorial-2 {
+  left: 6331px;
+  position: absolute;
+  width: 1280px;
+  height: 832px;
+  top: 1491px;
+  background-color: #fffbf2;
+  overflow: hidden;
+}
+
+.current-interactive .text-wrapper-19 {
+  position: absolute;
+  top: 131px;
+  left: 251px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #303030;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 2.88px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.current-interactive .ellipse-7 {
+  background-color: #303030;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 0;
+  border-radius: 28px;
+}
+
+.current-interactive .text-wrapper-20 {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: normal;
+}
+
+.current-interactive .ellipse-8 {
+  background-color: #303030;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 16px;
+  border-radius: 28px;
+}
+
+.current-interactive .group-20 {
+  position: absolute;
+  width: 248px;
+  height: 469px;
+  top: 203px;
+  left: 117px;
+}
+
+.current-interactive .group-21 {
+  position: absolute;
+  width: 345px;
+  height: 469px;
+  top: 203px;
+  left: 395px;
+}
+
+.current-interactive .group-22 {
+  position: absolute;
+  width: 345px;
+  height: 469px;
+  top: 203px;
+  left: 770px;
+}
+
+.current-interactive .SSP-tutorial-2 {
+  width: 585px;
+  height: 86px;
+  top: 101px;
+  left: 207px;
+  border: 4px solid;
+  position: absolute;
+  background-color: #fffbf2;
+  border-radius: 60px;
+  overflow: hidden;
+  border-color: #fec944;
+}
+
+.current-interactive .overlap-10 {
+  position: absolute;
+  width: 474px;
+  height: 22px;
+  top: 43px;
+  left: 34px;
+}
+
+.current-interactive .text-wrapper-21 {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.current-interactive .vector-12 {
+  position: absolute;
+  width: 225px;
+  height: 4px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .text-wrapper-22 {
+  position: absolute;
+  top: 16px;
+  left: 36px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.current-interactive .los-geht-s {
+  position: absolute;
+  width: 141px;
+  height: 43px;
+  top: 173px;
+  left: 651px;
+  background-color: #03b58a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .los-geht-s-2 {
+  top: 2px;
+  left: 15px;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  position: absolute;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .group-23 {
+  left: -17889px;
+  background-image: url(./img/vector-21-55.png);
+  position: absolute;
+  width: 412px;
+  height: 485px;
+  top: -12276px;
+  background-size: 100% 100%;
+}
+
+.current-interactive .overlap-group-9 {
+  position: absolute;
+  width: 159px;
+  height: 138px;
+  top: -11598px;
+  left: -18224px;
+}
+
+.current-interactive .subtract-8 {
+  position: absolute;
+  width: 19px;
+  height: 24px;
+  top: -11715px;
+  left: -18348px;
+}
+
+.current-interactive .subtract-9 {
+  position: absolute;
+  width: 29px;
+  height: 63px;
+  top: -11790px;
+  left: -18326px;
+}
+
+.current-interactive .group-24 {
+  left: -18349px;
+  position: absolute;
+  width: 531px;
+  height: 439px;
+  top: -11042px;
+}
+
+.current-interactive .SSP-main-tutorial-3 {
+  left: 3691px;
+  position: absolute;
+  width: 1280px;
+  height: 832px;
+  top: 1491px;
+  background-color: #fffbf2;
+  overflow: hidden;
+}
+
+.current-interactive .group-25 {
+  position: absolute;
+  width: 256px;
+  height: 469px;
+  top: 203px;
+  left: 117px;
+}
+
+.current-interactive .overlap-11 {
+  position: relative;
+  width: 248px;
+  height: 469px;
+  background-color: #85a6f940;
+  border-radius: 60px;
+}
+
+.current-interactive .overlap-12 {
+  position: absolute;
+  width: 209px;
+  height: 205px;
+  top: 24px;
+  left: 14px;
+}
+
+.current-interactive .overlap-13 {
+  position: absolute;
+  width: 196px;
+  height: 104px;
+  top: 0;
+  left: 12px;
+}
+
+.current-interactive .rectangle-5 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 5px;
+  left: 0;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .group-26 {
+  position: absolute;
+  width: 68px;
+  height: 87px;
+  top: 0;
+  left: 8px;
+  transform: rotate(122.08deg);
+}
+
+.current-interactive .overlap-group-10 {
+  position: relative;
+  width: 150px;
+  height: 148px;
+  top: -31px;
+  left: -41px;
+}
+
+.current-interactive .group-27 {
+  position: absolute;
+  width: 106px;
+  height: 111px;
+  top: 19px;
+  left: 22px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .vector-13 {
+  position: absolute;
+  width: 24px;
+  height: 29px;
+  top: 61px;
+  left: 75px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .group-28 {
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  top: 74px;
+  left: 89px;
+}
+
+.current-interactive .vector-14 {
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  top: 62px;
+  left: 78px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .vector-15 {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  top: 59px;
+  left: 70px;
+  transform: rotate(-122.08deg);
+}
+
+.current-interactive .text-wrapper-23 {
+  top: 20px;
+  left: 88px;
+  color: #303030;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: absolute;
+  width: 93px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .overlap-14 {
+  position: absolute;
+  width: 209px;
+  height: 102px;
+  top: 103px;
+  left: 0;
+}
+
+.current-interactive .rectangle-6 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 11px;
+  left: 12px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .group-29 {
+  position: absolute;
+  width: 95px;
+  height: 102px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .text-wrapper-24 {
+  width: 68px;
+  top: 25px;
+  left: 110px;
+  color: #303030;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: absolute;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .overlap-15 {
+  position: absolute;
+  width: 207px;
+  height: 103px;
+  top: 236px;
+  left: 15px;
+}
+
+.current-interactive .rectangle-7 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 11px;
+  left: 11px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .group-30 {
+  position: absolute;
+  width: 93px;
+  height: 103px;
+  top: 0;
+  left: 0;
+}
+
+.current-interactive .text-wrapper-25 {
+  width: 90px;
+  top: 28px;
+  left: 100px;
+  color: #303030;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: absolute;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .overlap-16 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 360px;
+  left: 26px;
+  background-color: #27476e;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .text-wrapper-26 {
+  position: absolute;
+  width: 124px;
+  top: 14px;
+  left: 36px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.current-interactive .group-31 {
+  position: absolute;
+  width: 353px;
+  height: 477px;
+  top: 199px;
+  left: 766px;
+}
+
+.current-interactive .SSP-tutorial-3 {
+  width: 345px;
+  height: 468px;
+  top: 203px;
+  left: 770px;
+  border: 16px solid;
+  position: absolute;
+  background-color: #fffbf2;
+  border-radius: 60px;
+  overflow: hidden;
+  border-color: #fec944;
+}
+
+.current-interactive .wie-trainiert-man {
+  position: absolute;
+  top: 42px;
+  left: 47px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.current-interactive .text-wrapper-27 {
+  position: absolute;
+  width: 251px;
+  top: 138px;
+  left: 47px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #303030;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.current-interactive .vector-16 {
+  position: absolute;
+  width: 259px;
+  height: 8px;
+  top: 123px;
+  left: 43px;
+}
+
+.current-interactive .weiter-2 {
+  position: absolute;
+  width: 142px;
+  height: 53px;
+  top: 638px;
+  left: 872px;
+  background-color: #03b58a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .group-32 {
+  left: -15249px;
+  background-image: url(./img/vector-21-55.png);
+  position: absolute;
+  width: 412px;
+  height: 485px;
+  top: -12276px;
+  background-size: 100% 100%;
+}
+
+.current-interactive .overlap-group-11 {
+  position: absolute;
+  width: 159px;
+  height: 138px;
+  top: -11598px;
+  left: -15584px;
+}
+
+.current-interactive .subtract-10 {
+  position: absolute;
+  width: 19px;
+  height: 24px;
+  top: -11715px;
+  left: -15708px;
+}
+
+.current-interactive .subtract-11 {
+  position: absolute;
+  width: 29px;
+  height: 63px;
+  top: -11790px;
+  left: -15686px;
+}
+
+.current-interactive .group-33 {
+  left: -15709px;
+  position: absolute;
+  width: 531px;
+  height: 439px;
+  top: -11042px;
+}
+
+.current-interactive .SSP-main-blurred {
+  position: absolute;
+  width: 1280px;
+  height: 832px;
+  top: 1491px;
+  left: 2371px;
+}
+
+.current-interactive .schere-comp-2 {
+  position: absolute;
+  width: 236px;
+  height: 1172px;
+  top: 3387px;
+  left: 1051px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .property-frame {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 20px;
+  left: 20px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 677px;
+  left: 20px;
+  background-color: #b4c7f8;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-frame-2 {
+  top: 151px;
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  left: 20px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .group-34 {
+  height: 45px;
+  top: 24px;
+  left: 10px;
+  position: absolute;
+  width: 85px;
+}
+
+.current-interactive .overlap-group-12 {
+  position: relative;
+  width: 81px;
+  height: 45px;
+}
+
+.current-interactive .vector-17 {
+  position: absolute;
+  width: 42px;
+  height: 40px;
+  top: 0;
+  left: 20px;
+}
+
+.current-interactive .text-wrapper-28 {
+  top: 13px;
+  left: 33px;
+  font-family: "Roboto", Helvetica;
+  font-size: 13px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+  color: #fffbf2;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .text-wrapper-29 {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.current-interactive .property-variant {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 809px;
+  left: 20px;
+  background-color: #b4c7f8;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-frame-3 {
+  top: 283px;
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  left: 20px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .overlap-17 {
+  position: absolute;
+  width: 95px;
+  height: 80px;
+  top: 0;
+  left: 82px;
+}
+
+.current-interactive .vector-18 {
+  position: absolute;
+  width: 83px;
+  height: 80px;
+  top: 0;
+  left: 9px;
+}
+
+.current-interactive .group-35 {
+  height: 32px;
+  top: 44px;
+  left: 10px;
+  position: absolute;
+  width: 85px;
+}
+
+.current-interactive .text-wrapper-30 {
+  top: 0;
+  left: 34px;
+  font-family: "Roboto", Helvetica;
+  font-size: 13px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+  color: #fffbf2;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .text-wrapper-31 {
+  top: 7px;
+  left: 0;
+  color: #fffbf2;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  position: absolute;
+  width: 93px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .property-2 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 940px;
+  left: 20px;
+  background-color: #b4c7f8;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-frame-4 {
+  top: 414px;
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  left: 20px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .overlap-18 {
+  position: relative;
+  width: 209px;
+  height: 104px;
+  top: -13px;
+  left: -13px;
+}
+
+.current-interactive .vector-19 {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  top: 13px;
+  left: 58px;
+}
+
+.current-interactive .group-36 {
+  height: 32px;
+  top: 57px;
+  left: 105px;
+  position: absolute;
+  width: 85px;
+}
+
+.current-interactive .text-wrapper-32 {
+  top: 20px;
+  left: 95px;
+  color: #fffbf2;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  position: absolute;
+  width: 93px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .group-37 {
+  position: absolute;
+  width: 68px;
+  height: 87px;
+  top: 8px;
+  left: 21px;
+  transform: rotate(122.08deg);
+}
+
+.current-interactive .property-3 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 1072px;
+  left: 20px;
+  background-color: #b4c7f8;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-frame-5 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 546px;
+  left: 20px;
+  background-color: #85a6f9;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .vector-20 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 13px;
+  left: 13px;
+}
+
+.current-interactive .text-wrapper-33 {
+  top: 0;
+  left: 30px;
+  font-family: "Roboto", Helvetica;
+  font-size: 13px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+  color: #fffbf2;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .stein-comp-2 {
+  position: absolute;
+  width: 236px;
+  height: 1172px;
+  top: 3387px;
+  left: 1354px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .papier-comp-2 {
+  position: absolute;
+  width: 236px;
+  height: 1172px;
+  top: 3387px;
+  left: 1637px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .tipps-2 {
+  position: absolute;
+  width: 96px;
+  height: 366px;
+  top: 3390px;
+  left: 2839px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .property-default {
+  position: absolute;
+  width: 56px;
+  height: 94px;
+  top: 20px;
+  left: 20px;
+}
+
+.current-interactive .property-4 {
+  position: absolute;
+  width: 56px;
+  height: 94px;
+  top: 132px;
+  left: 20px;
+}
+
+.current-interactive .ellipse-9 {
+  background-color: #686868;
+  box-shadow: 0px 4px 4px #00000040;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 0;
+  border-radius: 28px;
+}
+
+.current-interactive .text-wrapper-34 {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #686868;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: normal;
+}
+
+.current-interactive .property-5 {
+  position: absolute;
+  width: 56px;
+  height: 94px;
+  top: 244px;
+  left: 20px;
+}
+
+.current-interactive .ellipse-10 {
+  background-color: #686868;
+  box-shadow: inset 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 0;
+  border-radius: 28px;
+}
+
+.current-interactive .weiter-3 {
+  position: absolute;
+  width: 182px;
+  height: 238px;
+  top: 3387px;
+  left: 1970px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .property-default-2 {
+  position: absolute;
+  width: 142px;
+  height: 53px;
+  top: 20px;
+  left: 20px;
+  background-color: #03b58a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-6 {
+  position: absolute;
+  width: 142px;
+  height: 53px;
+  top: 93px;
+  left: 20px;
+  background-color: #6fd8be;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-7 {
+  position: absolute;
+  width: 142px;
+  height: 53px;
+  top: 165px;
+  left: 20px;
+  background-color: #6fd8bf;
+  border-radius: 100px;
+  box-shadow: inset 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+}
+
+.current-interactive .das-tutorial-2 {
+  position: absolute;
+  width: 371px;
+  height: 210px;
+  top: 3390px;
+  left: 2178px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .property-default-3 {
+  position: absolute;
+  width: 331px;
+  height: 43px;
+  top: 20px;
+  left: 20px;
+  background-color: #03b58a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-8 {
+  position: absolute;
+  width: 331px;
+  height: 43px;
+  top: 83px;
+  left: 20px;
+  background-color: #6fd8bf;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-9 {
+  position: absolute;
+  width: 331px;
+  height: 43px;
+  top: 147px;
+  left: 20px;
+  background-color: #6fd8bf;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+}
+
+.current-interactive .los-geht-s-3 {
+  position: absolute;
+  width: 181px;
+  height: 210px;
+  top: 3388px;
+  left: 2592px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .los-geht-s-wrapper {
+  position: absolute;
+  width: 141px;
+  height: 43px;
+  top: 20px;
+  left: 20px;
+  background-color: #03b58a;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-10 {
+  position: absolute;
+  width: 141px;
+  height: 43px;
+  top: 83px;
+  left: 20px;
+  background-color: #6fd8bf;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-11 {
+  position: absolute;
+  width: 141px;
+  height: 43px;
+  top: 147px;
+  left: 20px;
+  background-color: #6fd8bf;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+}
+
+.current-interactive .tutorial-2 {
+  position: absolute;
+  width: 129px;
+  height: 362px;
+  top: 3387px;
+  left: 2990px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .property-default-4 {
+  position: absolute;
+  width: 89px;
+  height: 94px;
+  top: 20px;
+  left: 20px;
+}
+
+.current-interactive .property-12 {
+  position: absolute;
+  width: 89px;
+  height: 94px;
+  top: 134px;
+  left: 20px;
+}
+
+.current-interactive .ellipse-11 {
+  background-color: #686868;
+  box-shadow: 0px 4px 4px #00000040;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 16px;
+  border-radius: 28px;
+}
+
+.current-interactive .property-13 {
+  position: absolute;
+  width: 89px;
+  height: 94px;
+  top: 248px;
+  left: 20px;
+}
+
+.current-interactive .ellipse-12 {
+  background-color: #686868;
+  box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 0;
+  left: 16px;
+  border-radius: 28px;
+}
+
+.current-interactive .countdown {
+  position: absolute;
+  width: 208px;
+  height: 1048px;
+  top: 3390px;
+  left: 3216px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .property-default-5 {
+  position: absolute;
+  width: 168px;
+  height: 127px;
+  top: 164px;
+  left: 13px;
+}
+
+.current-interactive .overlap-group-13 {
+  position: relative;
+  width: 177px;
+  height: 137px;
+  top: -1px;
+  left: -6px;
+  background-image: url(./img/vector-39-11.svg);
+  background-size: 100% 100%;
+}
+
+.current-interactive .text-wrapper-35 {
+  top: 14px;
+  left: 62px;
+  font-family: "Rock Salt", Helvetica;
+  font-size: 42px;
+  letter-spacing: 2.1px;
+  position: absolute;
+  font-weight: 400;
+  color: #fffbf2;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .property-14 {
+  position: absolute;
+  width: 168px;
+  height: 127px;
+  top: 311px;
+  left: 13px;
+}
+
+.current-interactive .overlap-19 {
+  position: relative;
+  width: 177px;
+  height: 137px;
+  top: -1px;
+  left: -6px;
+  background-image: url(./img/vector-39-9.svg);
+  background-size: 100% 100%;
+}
+
+.current-interactive .text-wrapper-36 {
+  top: 8px;
+  left: 64px;
+  font-family: "Rock Salt", Helvetica;
+  font-size: 42px;
+  letter-spacing: 2.1px;
+  position: absolute;
+  font-weight: 400;
+  color: #fffbf2;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .property-15 {
+  position: absolute;
+  width: 168px;
+  height: 127px;
+  top: 459px;
+  left: 13px;
+}
+
+.current-interactive .overlap-20 {
+  position: relative;
+  width: 177px;
+  height: 137px;
+  top: -1px;
+  left: -6px;
+  background-image: url(./img/vector-39-7.svg);
+  background-size: 100% 100%;
+}
+
+.current-interactive .text-wrapper-37 {
+  top: 14px;
+  left: 72px;
+  font-family: "Rock Salt", Helvetica;
+  font-size: 42px;
+  letter-spacing: 2.1px;
+  position: absolute;
+  font-weight: 400;
+  color: #fffbf2;
+  text-align: center;
+  line-height: normal;
+}
+
+.current-interactive .property-16 {
+  position: absolute;
+  width: 168px;
+  height: 127px;
+  top: 17px;
+  left: 13px;
+}
+
+.current-interactive .overlap-21 {
+  position: relative;
+  width: 177px;
+  height: 137px;
+  top: -1px;
+  left: -6px;
+  background-image: url(./img/vector-39-5.svg);
+  background-size: 100% 100%;
+}
+
+.current-interactive .text-wrapper-38 {
+  position: absolute;
+  top: 33px;
+  left: 56px;
+  font-family: "Rock Salt", Helvetica;
+  font-weight: 400;
+  color: #fffbf2;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.current-interactive .property-17 {
+  position: absolute;
+  width: 169px;
+  height: 129px;
+  top: 900px;
+  left: 12px;
+}
+
+.current-interactive .property-18 {
+  position: absolute;
+  width: 168px;
+  height: 127px;
+  top: 606px;
+  left: 13px;
+}
+
+.current-interactive .overlap-22 {
+  position: relative;
+  width: 177px;
+  height: 137px;
+  top: -1px;
+  left: -6px;
+  background-image: url(./img/vector-39-3.svg);
+  background-size: 100% 100%;
+}
+
+.current-interactive .property-19 {
+  position: absolute;
+  width: 168px;
+  height: 127px;
+  top: 753px;
+  left: 13px;
+}
+
+.current-interactive .overlap-23 {
+  position: relative;
+  width: 177px;
+  height: 137px;
+  top: -1px;
+  left: -6px;
+  background-image: url(./img/vector-39-1.svg);
+  background-size: 100% 100%;
+}
+
+.current-interactive .vector-21 {
+  position: absolute;
+  width: 169px;
+  height: 129px;
+  top: 3957px;
+  left: 3571px;
+}
+
+.current-interactive .trainiere-2 {
+  position: absolute;
+  width: 236px;
+  height: 321px;
+  top: 3387px;
+  left: 790px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed;
+  border-color: #9747ff;
+}
+
+.current-interactive .property-default-6 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 20px;
+  left: 20px;
+  background-color: #27476e;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-20 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 120px;
+  left: 20px;
+  background-color: #4d637e;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.current-interactive .property-21 {
+  position: absolute;
+  width: 196px;
+  height: 80px;
+  top: 221px;
+  left: 20px;
+  background-color: #4d637e;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #00000040, inset 0px 4px 4px #00000040;
+}
+
+.current-interactive .text-wrapper-39 {
+  position: absolute;
+  top: 301px;
+  left: 636px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 200px;
+  letter-spacing: 0;
+  line-height: normal;
+}
