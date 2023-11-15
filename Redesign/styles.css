@@ -17,8 +17,8 @@ video {
 }
 
 img {
-    max-height: 240px;
-    object-fit: contain;
+    /*max-height: 240px;
+    object-fit: contain;*/
 }
 
 canvas {
@@ -64,11 +64,16 @@ canvas {
     background-color: #cdcdcd; /* Darker background color on hover */
 }
 .app {
-    display: flex;  
+    /*display: flex;  
     width: 100%;
     justify-content: space-around;
     /* flex-direction: row;
     justify-content: center; */ 
+    
+    display: flex;
+    width: 100%;
+    background-color: #fffbf2;
+    overflow: hidden;
 }
 
 .settings {
@@ -94,7 +99,7 @@ canvas {
     width: 40%;
     align-items: center;*/
         
-    position: absolute;
+    
     width: 248px;
     height: 469px;
     top: 203px;

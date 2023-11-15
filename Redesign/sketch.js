@@ -75,7 +75,27 @@ function setup() {
   //the inverse end of the function.
   //
   let app = createDiv(''); //contains everything except the header
-  app.class('app');
+  app.class('trial');
+
+  overlap = createDiv('');
+  overlap.class('overlap');
+
+  let frame_img = createImg('images/yellow-frame.svg');
+  frame_img.class('subtract');
+
+  let greenStarLeft_img = createImg('images/green-star.svg');
+  greenStarLeft_img.class('vector');
+
+  let blueStarRight_img = createImg('images/blue-star.svg');
+  blueStarRight_img.class('img');
+
+  let redStarBottom_img = createImg('images/red-star.svg');
+  redStarBottom_img.class('vector-7');
+
+  overlap.child(frame_img);
+  overlap.child(greenStarLeft_img);
+  overlap.child(blueStarRight_img);
+  overlap.child(redStarBottom_img);
 
   //int battleground for game interface
   battleground = createDiv('');
@@ -122,7 +142,7 @@ function setup() {
 
   //init training & setting panel
   train_div = createDiv('');
-  train_div.class('train');
+  train_div.class('group');
   //init instructions text
   instructions = createP("Select a class and hold the Space bar to begin training.");
   //init class buttons and subcomponents
@@ -173,8 +193,9 @@ function setup() {
   train_div.child(collect);
 
   //add training panel and game panel to app framework
-  app.child(train_div);
-  app.child(battleground);
+  overlap.child(train_div);
+  overlap.child(battleground);
+  app.child(overlap);
   //
   //end html element initialization
   //
