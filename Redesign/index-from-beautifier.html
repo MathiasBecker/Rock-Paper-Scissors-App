@@ -1,0 +1,103 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gesture-based Rock/Paper/Scissors</title>
+	<!-- p5 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js" crossorigin="anonymous"></script>
+	<!-- ml5 -->
+	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+	<style type="text/css" data-glamor=""></style>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="chrome-extension://nngceckbapebfimnlniiiahkandclblb/content/fido2/page-script.js"></script>
+</head>
+
+<body>
+	<h1>Gesture-based Rock/Paper/Scissors</h1>
+	<!-- <div class="camera-container">
+    <video id="video" autoplay></video>
+  </div> -->
+	<script src="sketch.js"></script>
+	<!-- <div class="buttons">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </div> -->
+	<!-- Code injected by live-server -->
+	<script>
+	// <![CDATA[  <-- For SVG support
+	if('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for(var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if(elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if(msg.data == 'reload') window.location.reload();
+				else if(msg.data == 'refreshcss') refreshCSS();
+			};
+			if(sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	} else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+	</script>
+	<div class="app">
+		<div class="train">
+			<p>Select a class and hold the Space bar to begin training.</p>
+			<div class="settings">
+				<button class="button">Play</button>
+				<button class="button">Reset class</button>
+			</div>
+			<div class="class_div" id="rock" style="background-color: rgb(205, 205, 205); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;">
+				<p class="label">Rock ✊</p>
+				<canvas id="defaultCanvas0" class="p5Canvas" width="450" height="60" style="width: 450px; height: 60px;"></canvas>
+			</div>
+			<div class="class_div" id="paper">
+				<p class="label">Paper ✋</p>
+				<canvas id="defaultCanvas1" class="p5Canvas" width="450" height="60" style="width: 450px; height: 60px;"></canvas>
+			</div>
+			<div class="class_div" id="scissors" style="background-color: rgb(220, 220, 220); box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;">
+				<p class="label">Scissors ✌️</p>
+				<canvas id="defaultCanvas2" class="p5Canvas" width="450" height="60" style="width: 450px; height: 60px;"></canvas>
+			</div>
+			<button class="button" id="collect">Train</button>
+		</div>
+		<div class="battleground">
+			<div class="competitor-div">
+				<p class="big-text">Player</p>
+				<video playsinline="" crossorigin="anonymous" width="320" height="240" style="transform: scaleX(-1); width: 320px; height: 240px;"></video>
+				<p class="big-text">✊</p>
+			</div>
+			<div class="winner">
+				<p class="big-text"> </p>
+			</div>
+			<div class="competitor-div">
+				<p class="big-text">Computer</p><img src="images/robot.png">
+				<p class="big-text"></p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
