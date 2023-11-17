@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gesture-based Rock/Paper/Scissors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<h1>Gesture-based Rock/Paper/Scissors</h1>
+<div class="app">
+	<div><!-- (!) elements moved outside .train -->
+		<p>Select a class and hold the Space bar to begin training.</p>
+		<div class="settings">
+			<button class="button">Play</button>
+			<button class="button">Reset class</button>
+		</div>
+	</div><!-- /(!) -->
+	<div class="train">
+		<div class="class_div" id="rock" title="✊">
+			<p class="label">
+				<img src="assets/hand.rock.png" alt="Rock">
+				<span>Rock</span>
+			</p>
+			<canvas id="defaultCanvas0" class="p5Canvas" width="450" height="60"></canvas>
+		</div>
+		<div class="class_div" id="paper" title="✋">
+			<p class="label">
+				<img src="assets/hand.paper.png" alt="Paper">
+				<span>Paper</span>
+			</p>
+			<canvas id="defaultCanvas1" class="p5Canvas" width="450" height="60"></canvas>
+		</div>
+		<div class="class_div" id="scissors" title="✌️">
+			<p class="label">
+				<img src="assets/hand.scissors.png" alt="Scissors">
+				<span>Scissors</span>
+			</p>
+			<canvas id="defaultCanvas2" class="p5Canvas" width="450" height="60"></canvas>
+		</div>
+		<button class="button" id="collect">Train</button>
+	</div>
+	<div class="battleground">
+		<div class="competitor-div">
+			<p class="big-text">Player</p>
+			<video playsinline="" crossorigin="anonymous" width="320" height="240"></video>
+			<p class="big-text">
+				<img src="assets/hand.rock.png" alt="✊">
+			</p>
+		</div>
+		<div class="winner">
+			<p class="big-text">Winner Text</p>
+		</div>
+		<div class="competitor-div">
+			<p class="big-text">Computer</p>
+			<img src="assets/robot.png">
+			<p class="big-text">Competitor Text</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
