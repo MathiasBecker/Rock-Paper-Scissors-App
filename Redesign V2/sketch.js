@@ -411,8 +411,8 @@ function draw() {
 //loop, but they have their own local variables and functions. 
 //
 let canvas_width = 450;
-let canvas_height = 60;
-let text_height = 40
+let canvas_height = 40;
+let text_height = 20
 let text_width = 140;
 // init rock frame count
 let rock_sketch = function(p) {
