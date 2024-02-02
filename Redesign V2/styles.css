@@ -34,7 +34,7 @@
 	--color-link-hover: var(--color-alpha);
 
 	--space: 2rem;
-	--page-margin: calc(var(--space) * 0.9);
+	--page-margin: calc(var(--space) * 0.6);
 	--page-max-width: calc(min(100vw, 1600px) - var(--page-margin));
 
 	--font-family: f;
@@ -67,6 +67,20 @@ h1 {
 	text-align: center;
 }
 
+a {
+	font-family: var(--font-family);
+	font-size: 85%;
+	text-align: center;
+	color: var(--color-white);
+	background-color: var(--color-button);
+	border: none;
+	border-radius: 1em;
+	padding: 1em;
+	transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+	text-decoration: none;
+	z-index: 9999;
+  }
+
 button {
 	font-family: var(--font-family);
 	font-size: 85%;
@@ -74,7 +88,7 @@ button {
 	background-color: var(--color-button);
 	border: none;
 	border-radius: 1em;
-	padding: .5em 1em;
+	padding: 1em 0;
 	transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 @media (hover: hover) {	button:hover { background-color: var(--color-button-hover) } }
@@ -114,6 +128,11 @@ button {
 	max-width: 100%;
 	border: 2px dashed #f09;
 	margin: 0 auto;
+}
+
+.app canvas {
+	border-radius: calc(var(--space));
+	vertical-align: middle;
 }
 
 .app > div:first-child {
@@ -157,7 +176,7 @@ button {
 	display: block;
 	background-color: var(--color-alpha);
 	border-radius: calc(var(--space) * .666);
-	padding: 1em;
+	padding: 0.5em;
 }
 .train .class_div .label {
 	display: flex;
@@ -165,6 +184,7 @@ button {
 	justify-content: center;
 	gap: 0 1em;
 	align-items: center;
+	font-size: larger;
 }
 .train .class_div .label > img {
 	display: inline-block;
@@ -200,12 +220,13 @@ button {
 	padding: 1em;
 }
 .battleground .competitor-div {
+	font-size: 150%;
 	display: block;
 	width: 50%;
 	background-color: var(--color-beta);
 }
 .battleground .winner {
-	font-size: 75%;
+	font-size: 125%;
 	width: 50%;
 	border: 2px dotted #f09;
 }
@@ -271,8 +292,8 @@ button {
 	content: '';
 	z-index: 1;
 	position: absolute;
-	top: 8%;
-	left: 8%;
+	top: 14%;
+	left: 5%;
 	transform-origin: 50% 50%;
 	transform: translate(-50%, -50%);
 	display: block;
@@ -284,8 +305,8 @@ button {
 	pointer-events: none;
 }
 .app > div:first-child:after {
-	top: 50%;
-	left: 105%;
+	top: -28%;
+	left: 103%;
 	rotate: -25deg;
 	background-color: var(--color-alpha);
 }
@@ -295,3 +316,371 @@ button {
 	rotate: 90deg;
 	background-color: var(--color-gamma-dark);
 }
+
+/* Popup container - can be anything you want */
+.popup {
+	position: absolute;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	left: 500;
+	top:100;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	color: #fff;
+	text-align: center;
+	border-radius: 16px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+  
+  .tipps-image {
+	width: 999px;
+	/*height: 616px;*/
+	position: absolute;
+	max-width: 999px;
+  }
+
+  .tipps-overlay {
+	background-color: #feeec6;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	opacity: 1;
+    width: calc(var(--space) * 30);
+    position: absolute;
+    left: -217%;
+    z-index: 9999;
+    /* align-content: center; */
+    align-items: center;
+    top: 300;
+  }
+
+  
+  .tipps-overlay .div {
+	background-color: #feeec6;
+	border: 16px solid;
+	border-radius: 16px;
+	border-color: #303030;
+	width: 999px;
+	height: 616px;
+	position: absolute;
+  }
+  
+  .tipps-overlay .overlap {
+	position: fixed;
+	width: 973px;
+	height: 66px;
+	top: -12px;
+	left: 11px;
+  }
+  
+  .tipps-overlay .rectangle {
+	position: absolute;
+	width: 973px;
+	height: 44px;
+	top: 22px;
+	left: 0;
+  }
+  
+  .tipps-overlay .group {
+	position: absolute;
+	width: 39px;
+	height: 37px;
+	top: 22px;
+	left: 911px;
+  }
+  
+  .tipps-overlay .overlap-group {
+	position: relative;
+	width: 37px;
+	height: 37px;
+	background-color: #fec944;
+	border-radius: 18.48px;
+  }
+  
+  .tipps-overlay .text-wrapper {
+	position: absolute;
+	top: 3px;
+	left: 12px;
+	/*font-family: "Rounded Mplus 1c Bold-Bold", Helvetica;*/
+	font-weight: 700;
+	color: #303030;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: normal;
+  }
+  
+  .tipps-overlay .text-wrapper-tipp-head {
+	position: absolute;
+	top: 0;
+	left: 63px;
+	/*font-family: "Rock Salt", Helvetica;*/
+	font-weight: 400;
+	color: #fec944;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: normal;
+  }
+  
+  .tipps-overlay .group-2 {
+	position: absolute;
+	width: 864px;
+	height: 96px;
+	top: 499px;
+	left: 97px;
+  }
+  
+  .tipps-overlay .img {
+	position: absolute;
+	width: 77px;
+	height: 79px;
+	top: 0;
+	left: 0;
+  }
+  
+  .tipps-overlay .text-wrapper-3 {
+	position: absolute;
+	top: 0;
+	left: 109px;
+	/*font-family: "Roboto", Helvetica;*/
+	font-weight: 600;
+	color: #050505;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+  }
+  
+  .tipps-overlay .group-3 {
+	position: absolute;
+	width: 756px;
+	height: 69px;
+	top: 27px;
+	left: 110px;
+  }
+  
+  .tipps-overlay .p {
+	position: absolute;
+	width: 751px;
+	top: 0;
+	left: 0;
+	font-family: "Roboto", Helvetica;
+	font-weight: 600;
+	color: #050505;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: normal;
+  }
+  
+  .tipps-overlay .text-wrapper-popup {
+	position: absolute;
+	width: 752px;
+	top: 21px;
+	left: 0;
+	/*font-family: "Roboto", Helvetica;*/
+	font-weight: 400;
+	color: #050505;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 24px;
+  }
+  
+  .tipps-overlay .group-4 {
+	position: absolute;
+	width: 863px;
+	height: 96px;
+	top: 151px;
+	left: 97px;
+  }
+  
+  .tipps-overlay .group-5 {
+	position: absolute;
+	width: 77px;
+	height: 81px;
+	top: 0;
+	left: 0;
+  }
+  
+  .tipps-overlay .group-6 {
+	position: absolute;
+	width: 756px;
+	height: 69px;
+	top: 27px;
+	left: 109px;
+  }
+  
+  .tipps-overlay .text-wrapper-5 {
+	position: absolute;
+	width: 677px;
+	top: 0;
+	left: 0;
+	font-family: "Roboto", Helvetica;
+	font-weight: 600;
+	color: #050505;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: normal;
+  }
+  
+  .tipps-overlay .group-7 {
+	position: absolute;
+	width: 863px;
+	height: 120px;
+	top: 259px;
+	left: 97px;
+  }
+  
+  .tipps-overlay .group-8 {
+	position: absolute;
+	width: 77px;
+	height: 78px;
+	top: 0;
+	left: 0;
+  }
+  
+  .tipps-overlay .group-9 {
+	position: absolute;
+	width: 756px;
+	height: 93px;
+	top: 27px;
+	left: 109px;
+  }
+  
+  .tipps-overlay .text-wrapper-6 {
+	position: absolute;
+	width: 752px;
+	top: 0;
+	left: 0;
+	font-family: "Roboto", Helvetica;
+	font-weight: 600;
+	color: #050505;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: normal;
+  }
+  
+  .tipps-overlay .text-wrapper-7 {
+	position: absolute;
+	width: 717px;
+	top: 21px;
+	left: 0;
+	font-family: "Roboto", Helvetica;
+	font-weight: 400;
+	color: #050505;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 24px;
+  }
+  
+  .tipps-overlay .group-10 {
+	position: absolute;
+	width: 863px;
+	height: 74px;
+	top: 65px;
+	left: 97px;
+  }
+  
+  .tipps-overlay .group-11 {
+	position: absolute;
+	width: 77px;
+	height: 74px;
+	top: 0;
+	left: 0;
+  }
+  
+  .tipps-overlay .group-12 {
+	position: absolute;
+	width: 756px;
+	height: 45px;
+	top: 27px;
+	left: 109px;
+  }
+  
+  .tipps-overlay .text-wrapper-8 {
+	position: absolute;
+	top: 0;
+	left: 109px;
+	font-family: "Roboto", Helvetica;
+	font-weight: 600;
+	color: #050505;
+	font-size: 20px;
+	letter-spacing: 0;
+	line-height: normal;
+	white-space: nowrap;
+  }
+  
+  .tipps-overlay .group-13 {
+	position: absolute;
+	width: 864px;
+	height: 96px;
+	top: 391px;
+	left: 97px;
+  }
+  
+  .tipps-overlay .vector {
+	top: 492px;
+	position: absolute;
+	width: 967px;
+	height: 1px;
+	left: 16px;
+  }
+  
+  .tipps-overlay .vector-2 {
+	top: 382px;
+	position: absolute;
+	width: 967px;
+	height: 1px;
+	left: 16px;
+  }
+  
+  .tipps-overlay .vector-3 {
+	top: 251px;
+	position: absolute;
+	width: 967px;
+	height: 1px;
+	left: 16px;
+  }
+  
+  .tipps-overlay .vector-4 {
+	top: 144px;
+	position: absolute;
+	width: 967px;
+	height: 1px;
+	left: 16px;
+  }
+  
+

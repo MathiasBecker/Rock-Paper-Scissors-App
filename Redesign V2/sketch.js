@@ -25,14 +25,14 @@ let selected_button; //currently selected class
 let playing = false; //true when play button is pressed
 let timer; //span between beginning a round and image capture, in seconds
 let ai_move; //stores move computer played 
-let bot_moves = ['rock', 'paper', 'scissors']; //possible moves bot can play
+let bot_moves = ['Stein', 'Papier', 'Schere']; //possible moves bot can play
 let acc_dict = {}; //dictionary storing number of images collected for each class 
 let emoji_dict = {}; //maps move name to respective emoji
 let counting = false; //if countdown is active
 let win_matrix = {
-  'rock': {'rock': 0, 'paper': -1, 'scissors': 1},  //stores as win_matrix[player_move][ai_move] = winner
-  'paper': {'rock': 1, 'paper': 0, 'scissors': -1}, // 0 = tie, 1 = player_win, -1 = ai_win
-  'scissors': {'rock': -1, 'paper': 1, 'scissors': 0}
+  'Stein': {'Stein': 0, 'Papier': -1, 'Schere': 1},  //stores as win_matrix[player_move][ai_move] = winner
+  'Papier': {'Stein': 1, 'Papier': 0, 'Schere': -1}, // 0 = tie, 1 = player_win, -1 = ai_win
+  'Schere': {'Stein': -1, 'Papier': 1, 'Schere': 0}
 }
 
 //
@@ -41,19 +41,20 @@ let win_matrix = {
 let train_div; //training & settings div
 
 //class button divs
-let rock_button;
-let paper_button;
-let scissors_button;
+let Stein_button;
+let Papier_button;
+let Schere_button;
 
 //class button text elements
-let rock;
-let paper;
-let scissors; 
+let Stein;
+let Papier;
+let Schere; 
 
 let instructions; //instructions text
 let reset; //reset button
 let play; //play button
 let collect; //train button
+let tipps;
 
 let bot; //computer component div
 let player; //player component
@@ -85,18 +86,27 @@ function setup() {
   let winner_div = createDiv('');
   winner_div.class('winner');
   winner = createP(' ');
-  winner.class('big-text');
+  //winner.class('big-text');
+  play = createButton("Spiele");
+  play.class('button');
+  play.id('play');
+  winner_div.child(play);
+  //tipps = createButton("Tipps");
+  //tipps.class('button');
+  //tipps.id('tipps');
+  winner_div.child(play);
   winner_div.child(winner);
 
   //init player div with subcomponents
   player = createDiv('');
   player.class('competitor-div');
-  let player_header = createP('Player');
-  player_header.class('big-text');
+  let player_header = createP('Du');
+  player_header.style('font-weight: bold;');
+  //player_header.class('big-text');
   video = createCapture(VIDEO, videoReady);
   video.style('transform', 'scaleX(-1)');
-  player_text = createP("Need training data");
-  player_text.class("big-text");
+  player_text = createP("Trainingsdaten benötigt");
+  //player_text.class("big-text");
   //add subcomponents to parent div
   player.child(player_header);
   player.child(video);
@@ -104,11 +114,13 @@ function setup() {
 
   //init bot div with subcomponents
   bot = createDiv('');
-  let bot_header = createP('Computer');
-  bot_header.class('big-text');
+  let bot_header = createP('Virtueller Gegner');
+  bot_header.style('font-weight: bold;');
+  //bot_header.class('big-text');
   let bot_img = createImg('images/robot.png');
+  bot_img.style('min-width: 100px')
   ai_move_text = createP('');
-  ai_move_text.class('big-text');
+  //ai_move_text.class('big-text');
   bot.class('competitor-div');
   //add subcomponents to parent div
   bot.child(bot_header);
@@ -125,42 +137,71 @@ function setup() {
   train_div.class('train');
   //init instructions text
   instructions = createP("Wähle eine Klasse und halte die Leertaste gedrückt, um mit dem Training zu beginnen");
+  
+  
   //init class buttons and subcomponents
-  rock_button = createDiv('');
-  paper_button = createDiv('');
-  scissors_button = createDiv('');
-  rock_button.class('class_div');
-  paper_button.class('class_div');
-  scissors_button.class('class_div');
-  rock = createP();
-  paper = createP();
-  scissors = createP();
-  rock.class('label');
-  paper.class('label');
-  scissors.class('label');
-  rock_button.id('rock');
-  paper_button.id('paper');
-  scissors_button.id('scissors');
-  rock.html('Rock ✊');
-  paper.html('Paper ✋');
-  scissors.html('Scissors ✌️');
+  Stein_button = createDiv('');
+  Papier_button = createDiv('');
+  Schere_button = createDiv('');
+  Stein_button.class('class_div');
+  Papier_button.class('class_div');
+  Schere_button.class('class_div');
+  Stein = createP();
+  Papier = createP();
+  Schere = createP();
+  Stein.class('label');
+  Papier.class('label');
+  Schere.class('label');
+  Stein_button.id('Stein');
+  Papier_button.id('Papier');
+  Schere_button.id('Schere');  
+
+  // New CSS labels:
+  let Stein_img = createImg('./images/hand.Stein.png');
+  Stein_img.style('max-height: 50px; max-width: 50px;');
+  let Stein_label = createP("Stein");
+  Stein_label.style('color: white;');
+  Stein.child(Stein_img);
+  Stein.child(Stein_label);
+
+  let Schere_img = createImg('./images/hand.Schere.png');
+  Schere_img.style('max-height: 50px; max-width: 50px;');
+  let Schere_label = createP("Schere");
+  Schere_label.style('color: white;');
+  Schere.child(Schere_img);
+  Schere.child(Schere_label);
+
+  let Papier_img = createImg('./images/hand.Papier.png');
+  Papier_img.style('max-height: 50px; max-width: 50px;');
+  let Papier_label = createP("Papier");
+  Papier_label.style('color: white;');
+  Papier.child(Papier_img);
+  Papier.child(Papier_label);
+
+  // old plain html labels:
+  //Stein.html('Stein ✊');
+  //Papier.html('Papier ✋');
+  //Schere.html('Schere ✌️');
+
   //add subcomponents to parents
-  rock_button.child(rock);
-  paper_button.child(paper);
-  scissors_button.child(scissors);
+  Stein_button.child(Stein);
+  Schere_button.child(Schere);
+  Papier_button.child(Papier);
 
   //init play, reset, and train buttons
   let settings = createDiv('');
-  reset = createButton("Klasse neu trainieren");
-  play = createButton("Spiele");
-  collect = createButton("Trainiere");
-  play.class('button');
+  reset = createButton("Gewählte Klasse zurücksetzen");
+  collect = createButton("Gewählte Klasse trainieren");
   reset.class('button');
+  reset.id('reset');
   collect.class('button');
   collect.id('collect');
   //add play and reset to settings. train is not a part of settings.
-  settings.child(play);
-  settings.child(reset);
+  //settings.child(tipps);
+  //settings.child(reset);
+  let tipps_link = createP('');
+  tipps_link.html('<a href="javascript:togglePopup()" style="position: relative; display: flex; min-width: 100px;">Tipps</a>');
+  settings.child(tipps_link);
   settings.class('settings');
 
   let outerDiv = createDiv('');
@@ -169,10 +210,11 @@ function setup() {
 
   //add all subcomponents to train & settings panel.
   //NOTE: order matters here. Each subcomponent is added in the order it appears on-screen
-  train_div.child(rock_button);
-  train_div.child(paper_button);
-  train_div.child(scissors_button);
+  train_div.child(Stein_button);
+  train_div.child(Papier_button);
+  train_div.child(Schere_button);
   train_div.child(collect);
+  train_div.child(reset);
 
   //add training panel and game panel to app framework
   app.child(outerDiv);
@@ -188,9 +230,9 @@ function setup() {
   knn = ml5.KNNClassifier();
 
   //init emoji dictionary
-  emoji_dict[rock_button.id()] = '✊';
-  emoji_dict[paper_button.id()] = "✋";
-  emoji_dict[scissors_button.id()] = '✌️';
+  emoji_dict[Stein_button.id()] = '<img src="./images/hand.Stein.png"/>'; //'✊';
+  emoji_dict[Papier_button.id()] = '<img src="./images/hand.Papier.png"/>'; //"✋";
+  emoji_dict[Schere_button.id()] = '<img src="./images/hand.Schere.png"/>'; //'✌️';
   
   //
   //the for loop iterates through each class and initializes
@@ -199,7 +241,7 @@ function setup() {
   //changes the selected_button variable to match accordingly, as well as the 
   //button styles. 
   //
-  let classes = [rock_button, paper_button, scissors_button];
+  let classes = [Stein_button, Papier_button, Schere_button];
   for (let i = 0; i < classes.length; i++) {
     let this_button = classes[i];
     acc_dict[this_button.id()] = 0;
@@ -233,7 +275,7 @@ function setup() {
     if (selected_button){
       knn.clearLabel(selected_button.id());
       acc_dict[selected_button.id()] = 0;
-      instructions.html("Select a class and hold the Space bar to begin training.");
+      instructions.html("Wähle eine Geste und halte die Leertaste gedrückt, um mit dem Training zu beginnen.");
       reset.elt.blur();
       model_ready = false;
       model_paused = false;
@@ -320,7 +362,7 @@ function goClassify() {
 //with training data.
 function goPlay() {
   if (!model_ready) {
-    instructions.html('You must train a class to being playing!');
+    instructions.html('Du musst erst eine Geste trainieren, bevor Du spielen kannst.');
   } else {    
     timer = 3; //countdown in seconds
     model_paused = false; //begin classifying again if paused
@@ -368,9 +410,9 @@ function countdown() {
 //called by countdown() when timer = 0. Evaluates the player's move against
 //the computer's move and chooses a winner using win_matrix. 
 function findWinner() {
-  if (win_matrix[test_label][ai_move] > 0) winner.html("Player's " + test_label + " beats Computers's " + ai_move + '. you win!');
-  else if (win_matrix[test_label][ai_move] < 0) winner.html("Computers's " + ai_move + " beats Player's " + test_label + '. you lose!');
-  else (winner.html('Player and Computer both threw ' + test_label + '. It\'s a tie!'));
+  if (win_matrix[test_label][ai_move] > 0) winner.html(test_label + " schlägt " + ai_move + '. Du gewinnst!');
+  else if (win_matrix[test_label][ai_move] < 0) winner.html(ai_move + " schlägt " + test_label + '. Du verlierst!');
+  else (winner.html('Ihr habt beide ' + test_label + ' gezogen. Unentschieden!'));
 }
 //
 //end play-specific functions
@@ -398,10 +440,10 @@ function draw() {
   //playing=true while play has been pressed and the timer has yet to reach 0.
   if (playing) {
     winner.html(timer);
-    instructions.html("Capturing in " + timer + " seconds...");
+    instructions.html("Ziehen in " + timer + " Sekunden...");
     countdown();
-  } else if (acc_dict[rock_button.id()] == 100 && acc_dict[paper_button.id()] == 100 && acc_dict[scissors_button.id()] == 100) {
-    instructions.html('Click Play and hold up a move!');
+  } else if (acc_dict[Stein_button.id()] == 100 && acc_dict[Papier_button.id()] == 100 && acc_dict[Schere_button.id()] == 100) {
+    instructions.html('Klicke auf Spielen und halte eine Geste in die Kamera!');
   }
 }
 //
@@ -412,39 +454,39 @@ function draw() {
 //
 let canvas_width = 450;
 let canvas_height = 40;
-let text_height = 20
-let text_width = 140;
-// init rock frame count
-let rock_sketch = function(p) {
+let text_height = 16
+let text_width = 120;
+// init Stein frame count
+let Stein_sketch = function(p) {
   let canvas;
   let run_me;
   p.setup = function() {
     // p.background('#f0f0f0');
     canvas = p.createCanvas(canvas_width, canvas_height);
-    // console.log(p.rock_button);
-    // canvas.parent(rock_button);
+    // console.log(p.Stein_button);
+    // canvas.parent(Stein_button);
     // console.log(document.getElementById('collect'));
-    // canvas.parent('rock');
+    // canvas.parent('Stein');
     run_me = true;
     p.background(255);
     p.textSize(24);
     p.fill(0);
-    p.text('0 frames collected', text_width, text_height); // Adjusted Y-coordinate
+    p.text('0 Bilder erfasst', text_width, text_height); // Adjusted Y-coordinate
   };
-  //draw rock frame count
+  //draw Stein frame count
   p.draw = function() {
     if (run_me) {
-      canvas.parent(rock_button);
+      canvas.parent(Stein_button);
       run_me = false;
-      //console.log('adding canvas to rock parent');
+      //console.log('adding canvas to Stein parent');
     }
-    if (selected_button == rock_button) {
+    if (selected_button == Stein_button) {
       p.background(255);
       // Calculate the width of the bar based on the accumulator value
-      let barWidth = p.map(acc_dict['rock'], 0, 100, 0, p.width);
+      let barWidth = p.map(acc_dict['Stein'], 0, 100, 0, p.width);
   
       // Interpolate the color from red to gree
-      let barColor = p.lerpColor(p.color('red'), p.color('#0f0'), acc_dict['rock'] / 100);
+      let barColor = p.lerpColor(p.color('#B5C8F8'), p.color('#85A6F9'), acc_dict['Stein'] / 100);
        
       // Draw the bar
        p.fill(barColor);
@@ -452,12 +494,50 @@ let rock_sketch = function(p) {
   
        p.textSize(24);
        p.fill(0);
-       p.text(acc_dict['rock'] + ' frames collected', text_width, text_height); // Adjusted Y-coordinate
+       p.text(acc_dict['Stein'] + ' Bilder erfasst', text_width, text_height); // Adjusted Y-coordinate
     }
   };
 };
-//init paper frame count
-let paper_sketch = function(p) {
+// init Schere frame count
+let Schere_sketch = function(p) {
+  let canvas;
+  let run_me;
+  p.setup = function() {
+    //p.background(220);
+    canvas = p.createCanvas(canvas_width, canvas_height);
+    p.background(255);
+    p.textSize(24);
+    p.fill(0);
+    run_me = true;
+    p.text('0 Bilder erfasst', text_width, text_height); // Adjusted Y-coordinate
+  };
+
+  //draw Schere frame count
+  p.draw = function() {
+    if (run_me) {
+      canvas.parent(Schere_button);
+      run_me = false;
+    }
+    if (selected_button == Schere_button) {
+      p.background(255);
+      // Calculate the width of the bar based on the accumulator value
+      let barWidth = p.map(acc_dict['Schere'], 0, 100, 0, p.width);
+  
+      // Interpolate the color from red to gree
+      let barColor = p.lerpColor(p.color('#B5C8F8'), p.color('#85A6F9'), acc_dict['Schere'] / 100);
+       
+      // Draw the bar
+       p.fill(barColor);
+       p.rect(0, 0, barWidth, 100);
+  
+       p.textSize(24);
+       p.fill(0);
+       p.text(acc_dict['Schere'] + ' Bilder erfasst', text_width, text_height); // Adjusted Y-coordinate
+    }
+  };
+};
+//init Papier frame count
+let Papier_sketch = function(p) {
   let canvas;
   let run_me;
   p.setup = function() {
@@ -467,21 +547,21 @@ let paper_sketch = function(p) {
     p.textSize(24);
     p.fill(0);
     run_me = true
-    p.text('0 frames collected', text_width, text_height); // Adjusted Y-coordinate
+    p.text('0 Bilder erfasst', text_width, text_height); // Adjusted Y-coordinate
   };
-  //draw paper frame count
+  //draw Papier frame count
   p.draw = function() {
     if (run_me) {
-      canvas.parent(paper_button);
+      canvas.parent(Papier_button);
       run_me = false;
     }
-    if (selected_button == paper_button) {
+    if (selected_button == Papier_button) {
       p.background(255);
       // Calculate the width of the bar based on the accumulator value
-      let barWidth = p.map(acc_dict['paper'], 0, 100, 0, p.width);
+      let barWidth = p.map(acc_dict['Papier'], 0, 100, 0, p.width);
   
       // Interpolate the color from red to gree
-      let barColor = p.lerpColor(p.color('red'), p.color('#0f0'), acc_dict['paper'] / 100);
+      let barColor = p.lerpColor(p.color('#B5C8F8'), p.color('#85A6F9'), acc_dict['Papier'] / 100);
        
       // Draw the bar
        p.fill(barColor);
@@ -489,52 +569,14 @@ let paper_sketch = function(p) {
   
        p.textSize(24);
        p.fill(0);
-       p.text(acc_dict['paper'] + ' frames collected', text_width, text_height); // Adjusted Y-coordinate
-    }
-  };
-};
-// init scissors frame count
-let scissors_sketch = function(p) {
-  let canvas;
-  let run_me;
-  p.setup = function() {
-    //p.background(220);
-    canvas = p.createCanvas(canvas_width, canvas_height);
-    p.background(255);
-    p.textSize(24);
-    p.fill(0);
-    run_me = true;
-    p.text('0 frames collected', text_width, text_height); // Adjusted Y-coordinate
-  };
-
-  //draw scissors frame count
-  p.draw = function() {
-    if (run_me) {
-      canvas.parent(scissors_button);
-      run_me = false;
-    }
-    if (selected_button == scissors_button) {
-      p.background(255);
-      // Calculate the width of the bar based on the accumulator value
-      let barWidth = p.map(acc_dict['scissors'], 0, 100, 0, p.width);
-  
-      // Interpolate the color from red to gree
-      let barColor = p.lerpColor(p.color('red'), p.color('#0f0'), acc_dict['scissors'] / 100);
-       
-      // Draw the bar
-       p.fill(barColor);
-       p.rect(0, 0, barWidth, 100);
-  
-       p.textSize(24);
-       p.fill(0);
-       p.text(acc_dict['scissors'] + ' frames collected', text_width, text_height); // Adjusted Y-coordinate
+       p.text(acc_dict['Papier'] + ' Bilder erfasst', text_width, text_height); // Adjusted Y-coordinate
     }
   };
 };
 
 //instantiate all canvases so they actually run
-let rock_canvas = new p5(rock_sketch);
-let paper_canvas =  new p5(paper_sketch);
-let scissors_canvas = new p5(scissors_sketch);
+let Stein_canvas = new p5(Stein_sketch);
+let Schere_canvas = new p5(Schere_sketch);
+let Papier_canvas =  new p5(Papier_sketch);
 
 

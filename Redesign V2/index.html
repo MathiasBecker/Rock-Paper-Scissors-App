@@ -13,10 +13,52 @@
 </head>
 
 <body>
-  <h1>Gesture-based Rock/Paper/Scissors</h1>
-  <!-- <div class="camera-container">
+  
+  <!-- <h1>Gesture-based Rock/Paper/Scissors</h1>
+  <div class="camera-container">
     <video id="video" autoplay></video>
   </div> -->
+
+  <div class="popup" onclick="togglePopup()">
+    <span class="popuptext" id="tippsPopup">
+      <div class="tipps-overlay">
+        <img src="images/Tipps.png" class="tipps-image"/>
+        <!--
+        <div class="div">
+          
+          <div class="overlap">
+            <img class="rectangle" src="images/rectangle-23.svg" />
+            <div class="group">
+              <div class="overlap-group"><div class="text-wrapper">X</div></div>
+            </div>
+            <div class="text-wrapper-2">Tipps</div>
+          </div>
+          <div class="group-2">
+            <img class="img" src="images/group-40-1.png" />
+            <div class="text-wrapper-3">Modellverbesserung</div>
+            <div class="group-3">
+              <p class="p">Wie verbessert man das Modell?</p>
+              <p class="text-wrapper-4">
+                Denke über alles nach, was du bisher über das Trainieren eines KI-Modells gelernt hast. Setze die oben
+                genannten Hinweise um. Teste es, um herauszufinden, wo zusätzliche Verbesserungen nötig sind.
+              </p>
+            </div>
+          </div>
+        
+          <img src="images/Tipps.png" />
+        </div>-->
+      </div>
+    </span>
+  </div>
+  
+  <script>
+  // When the user clicks on div, open the popup
+  function togglePopup() {
+    var popup = document.getElementById("tippsPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+
   <script src="sketch.js"></script>
   <!-- <div class="buttons">
     <button id="rock">Rock</button>

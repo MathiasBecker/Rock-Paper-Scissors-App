@@ -1,0 +1,230 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Fri Nov 24 2023 12:46:42 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="656086cd657bbcbd0d889bda" data-wf-site="649991c991e6e740cb1e84ea">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge-1-Climbing HTML Form</title>
+  <meta content="Challenge-1-Climbing HTML Form" property="og:title">
+  <meta content="Challenge-1-Climbing HTML Form" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/ikido-erfahrungsraum-bild-c08924564937d.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Roboto:300,regular,500"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script>
+var correctCode = "123";
+window.onload = function ()
+{
+    $("#excalidraw").show();
+}
+function myFunction() {
+	  // Get the value of the input field with id="numb"
+	  let code = document.getElementById("input-code").value;
+	  // If x is Not a Number or less than one or greater than 10
+	  let text;
+	  if (isNaN(code) || (code !== correctCode)) {
+		text = "Der eingegebene Code ist nicht korrekt";
+	  } else {
+		text = "Der eingegebene Code ist richtig";
+		window.location.href = "./uebersicht-2-tools.html?showbadge=1";
+	  }
+	  document.getElementById("demo").innerHTML = text;
+}
+</script>
+</head>
+<body class="body">
+  <div class="instructions-pop-up">
+    <div class="container-3 w-container">
+      <a data-w-id="ef412fc8-2fe6-655d-f024-f7facd7c2a0b" href="#" class="instructions-pop-up-close-button w-button">Schließen</a>
+      <div class="div-block-2"></div>
+      <section class="model-training">
+        <h4>Die Schritte zum Trainieren des Modells</h4>
+        <ol role="list" class="list">
+          <li class="list-item">
+            <div class="text-block-2">Öffne die Teachable Machine</div>
+            <a href="https://teachablemachine.withgoogle.com/train/image" target="_blank" class="w-inline-block"><img src="images/Teachable-Machine-Link-Preview.JPG" loading="lazy" sizes="100vw" srcset="images/Teachable-Machine-Link-Preview-p-500.jpg 500w, images/Teachable-Machine-Link-Preview.JPG 685w" alt="" class="image-11"></a>
+            <link rel="prerender" href="https://teachablemachine.withgoogle.com/train/image">
+          </li>
+          <li class="list-item-2">
+            <div class="text-block-3">Lade die Trainingsbilder in “Klasse 1” hoch.</div>
+            <ul role="list" class="list-2">
+              <li class="list-item-3">
+                <div>Um Bilder hochzuladen, klicke auf &quot;Hochladen&quot;.</div><img src="images/screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_28screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_27.png" loading="lazy" width="80" alt="" class="image-7">
+              </li>
+              <li class="list-item-4">
+                <div>Klicke dann auf &quot;Wähle Bilder aus deinen Dateien aus oder lege sie per Drag-and-Drop hier ab&quot;.</div><img src="images/screenshot-teachablemachine.withgoogle.com-2023.06.08-08_34_42.png" loading="lazy" width="200" alt="" class="image-8">
+              </li>
+              <li class="list-item-5">
+                <div class="text-block-4">Wähle <strong>den richtigen Ordner</strong> auf deinem Computer, und wähle alle Bilder im Ordner aus.</div>
+              </li>
+            </ul>
+          </li>
+          <li class="list-item-6">
+            <div class="text-block-7">Ändere den Namen der &quot;Klasse 1&quot;.</div><img src="images/ezgif.com-video-to-gif.gif" loading="lazy" width="250" alt="" class="image-9">
+          </li>
+          <li>
+            <div class="text-block-5">Wiederhole die Schritte 2 und 3, jetzt für Klasse 2.</div>
+          </li>
+          <li>
+            <div class="text-block-6">Trainiere dein Modell!</div><img src="images/screenshot-teachablemachine.withgoogle.com-2023.05.11-15_59_10.png" loading="lazy" width="180" alt="" class="image-10">
+          </li>
+        </ol>
+      </section>
+      <section class="model-testing">
+        <h4 class="heading-2">Die Schritte zum Testen des Modells</h4>
+        <ol role="list" class="list">
+          <li class="list-item">
+            <div class="text-block-2">Wähle im Abschnitt &quot;Vorschau&quot; die Option &quot;Datei&quot; anstelle von &quot;Webcam&quot;.</div><img src="images/Screenshot-7.png" loading="lazy" width="180" alt="" class="image-12">
+          </li>
+          <li class="list-item-2">
+            <div class="text-block-3">Teste das Modell, indem du prüfst, in welche Kategorie es jedes der Testbilder einordnet.</div>
+            <ul role="list" class="list-2">
+              <li class="list-item-3">
+                <div>Klicke dann auf &quot;Wähle Bilder aus deinen Dateien aus oder lege sie per Drag-and-Drop hier ab&quot;.</div><img src="images/screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_28screenshot-teachablemachine.withgoogle.com-2023.05.11-14_48_27.png" loading="lazy" width="80" alt="" class="image-7">
+              </li>
+              <li class="list-item-4">
+                <div>Klicke dann auf &quot;Wähle Bilder aus deinen Dateien aus oder lege sie per Drag-and-Drop hier ab&quot;.</div><img src="images/screenshot-teachablemachine.withgoogle.com-2023.06.08-08_34_42.png" loading="lazy" width="200" alt="" class="image-8">
+              </li>
+              <li class="list-item-5">
+                <div class="text-block-4">Wähle <strong>den richtigen Ordner</strong> auf deinem Computer. Teste jedes Bild in diesem Ordner, eins nach dem anderen.</div>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </div>
+  <section class="header-challenge-1">
+    <div data-w-id="8220b77e-5dbd-25b6-e41e-ed1a74a399bf" style="opacity:0" class="container-8 w-container">
+      <h1 class="heading-top-central">Klettertraining</h1>
+    </div>
+  </section>
+  <section class="important-hint">
+    <div class="container-5 w-container">
+      <h2 class="heading-4">Challenge: Wie lernt ein KI-System</h2>
+    </div>
+    <div class="container-6 w-container">
+      <div class="columns-2 w-row">
+        <div class="w-col w-col-6">
+          <div class="challenge-head">
+            <div class="div-block-left-icon"><img src="images/flag.png" loading="lazy" width="24" height="" alt="" srcset="images/flag-p-500.png 500w, images/flag.png 512w" sizes="20px" class="image-14"></div>
+            <div class="w-layout-grid grid">
+              <div class="text-block-8"><strong>Challenge: </strong></div>
+              <div>Wie lernt ein KI-System?</div>
+            </div>
+          </div>
+          <div class="task-head">
+            <div class="div-block-left-icon"><img src="images/faq.png" loading="lazy" width="20" sizes="20px" alt="" srcset="images/faq-p-500.png 500w, images/faq.png 512w" class="image-15"></div>
+            <div class="w-layout-grid grid">
+              <div class="text-block-8"><strong>Deine Aufgabe:</strong></div>
+              <div id="w-node-_7ad4012e-8e29-c601-64f9-d50520169c52-0d889bda">Es ist Zeit für deine erste Challenge! Mit der Teachable Machine wirst du selbst ein KI-Modell trainieren, das Katzen und Nacktmulle erkennt.</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6"><img src="images/Man-typing.gif" loading="lazy" alt="" class="image-21"></div>
+      </div>
+    </div>
+    <div class="container-task-detail w-container">
+      <div class="div-block-left-icon"><img src="images/tools-and-utensils.png" loading="lazy" width="24" height="" alt="" class="image-14"></div>
+      <div>Deine Aufgabe ist es, das KI-Modell mit zwei Klassen zu trainieren: Katze und Nacktmull. Lade die Trainingsbilder für jede dieser Klassen hoch, trainiere das Modell und überprüfe dann die Genauigkeit deines Modells anhand der Testbilder.</div>
+    </div>
+    <div class="container-hint w-container">
+      <div class="div-block-left-icon"><img src="images/pin.png" loading="lazy" width="24" height="" alt="" srcset="images/pin-p-500.png 500w, images/pin.png 512w" sizes="20px" class="image-14"></div>
+      <div class="w-layout-grid grid-2">
+        <div id="w-node-a59fe27a-5d39-566d-9d9d-8f9ac04b2070-0d889bda"><strong>Wichtig!</strong></div>
+        <div id="w-node-a5091c50-33f8-cb0b-4bbe-2bd78919d69b-0d889bda">Für diese Challenge findest du die Trainingsbilder und die Testbilder <strong>auf deinem Desktop</strong>, im Ordner 🗃️ <strong>Challenge 1.<br><br>‍</strong>Du kannst die Trainingsbilder für jede Klasse im Ordner 🗃️ <strong>&quot;Challenge 1 - Trainingsbilder&quot;</strong> finden.<br><br>Die Testbilder für jede Klasse findest du im Ordner 🗃️ <strong>&quot;Challenge 1 - Testbilder&quot;.</strong></div>
+      </div>
+    </div>
+    <div class="container-questionmark w-container">
+      <div class="div-block-left-icon"><img src="images/tutorial.png" loading="lazy" width="24" height="" alt="" srcset="images/tutorial-p-500.png 500w, images/tutorial.png 512w" sizes="20px" class="image-14"></div>
+      <div class="div-block-4">
+        <div class="text-block-11">Wenn du eine Erinnerung daran brauchst, wie man Teachable Machine zum Trainieren eines KI-Modells verwendet, findest du sie hier:<br><br><br>‍<a href="https://www.notion.so/cfc090bf17434c0b8e0c4871ba3c0dfa?pvs=21" class="link"><strong class="brand-link"></strong></a>
+        </div>
+        <a data-w-id="5f6aa7f2-d36d-e8b8-395a-c12ff0817231" href="#" class="button-4 w-button">Teachable Machine Tutorial</a>
+      </div>
+    </div>
+  </section>
+  <section class="expeditions-quizz">
+    <h2 class="heading-4">Expeditions-Quizz</h2>
+    <div class="container-questionnaire w-container">
+      <div class="div-block-left-icon"><img src="images/test.png" loading="lazy" width="20" sizes="20px" alt="" srcset="images/test-p-500.png 500w, images/test.png 512w" class="image-15"></div>
+      <div class="text-block-10"><strong>Fassen wir noch einmal zusammen, was wir beim Klettern in diesem Camp gelernt haben.</strong>‍<strong><br></strong></div>
+      <div class="form-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-2" data-wf-page-id="656086cd657bbcbd0d889bda" data-wf-element-id="9727cc17-653b-129c-6234-b362f252ab9c">
+          <div id="w-node-ee66066b-0671-253a-c2de-d5b485c8d464-0d889bda" class="w-layout-layout quick-stack wf-layout-layout">
+            <div id="w-node-_1320759f-0661-3589-1db8-4b3671af4cff-0d889bda" class="w-layout-cell"><label for="name">Wie klassifiziert die Teachable Machine dieses Testbild?</label></div>
+            <div id="w-node-_96e91998-40aa-9939-0fa0-a08df67a5db4-0d889bda" class="w-layout-cell"><img alt="" loading="lazy" src="images/Testbild_01_C3.PNG"></div>
+            <div id="w-node-_5e403537-bc12-27f4-bbf9-92b9ee167ae8-0d889bda" class="w-layout-cell"><label class="w-radio"><input type="radio" id="TestImage1_classifiedAs" name="TestImage1_classifiedAs" value="Katze" data-name="TestImage1_classifiedAs" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="TestImage1_classifiedAs">Katze</span></label><label class="w-radio"><input type="radio" id="TestImage1" name="TestImage1_classifiedAs" value="Nacktmull" data-name="TestImage1_classifiedAs" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="TestImage1">Nacktmull</span></label></div>
+            <div id="w-node-e913840d-8920-9c72-8f3d-9c8eb86184dd-0d889bda" class="w-layout-cell"><label for="name">Wie sicher ist sich die Teachable Machine bei dieser Einordnung?</label></div>
+            <div id="w-node-d1be7f61-8616-6aa2-4fcc-56887e444545-0d889bda" class="w-layout-cell"><input type="text" class="text-field w-input" maxlength="256" name="TestImage1_ConfScore" data-name="TestImage1_ConfScore" placeholder="Dein Wert (z.B.: 94 %)" id="TestImage1_ConfScore" required=""></div>
+            <div id="w-node-_77f7ca91-0355-ef78-de5d-248cea125651-0d889bda" class="w-layout-cell"><label for="name">Hat die Teachable Machine dieses Bild richtig eingeordnet?</label></div>
+            <div id="w-node-efbae38a-d876-7540-feee-75fbdaa86771-0d889bda" class="w-layout-cell"><label class="w-radio"><input type="radio" id="Ja" name="TestImage1_classifiedCorrectly" value="Ja" data-name="TestImage1_classifiedCorrectly" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Ja">Ja</span></label><label class="w-radio"><input type="radio" id="Nein" name="TestImage1_classifiedCorrectly" value="Nein" data-name="TestImage1_classifiedCorrectly" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Nein">Nein</span></label></div>
+            <div id="w-node-_16858d52-3bbd-3852-3ca6-1db0cb12c62c-0d889bda" class="w-layout-cell"><label for="name">Mögliche Gründe für die richtige bzw. falsche Einordnung:</label></div>
+            <div id="w-node-_09d64b38-9a1d-4c8d-2bde-c2cc2da19352-0d889bda" class="w-layout-cell"><textarea id="TestImage1_reasons" name="TestImage1_reasons" maxlength="5000" data-name="TestImage1_reasons" placeholder="Deine Antwort" required="" class="text-field w-input"></textarea></div>
+          </div>
+          <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4c3-0d889bda" class="w-layout-layout quick-stack wf-layout-layout">
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4c4-0d889bda" class="w-layout-cell"><label for="name">Wie klassifiziert die Teachable Machine dieses Testbild?</label></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4c7-0d889bda" class="w-layout-cell"><img alt="" loading="lazy" src="images/Testbild_02_C3.PNG"></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4c9-0d889bda" class="w-layout-cell"><label class="w-radio"><input type="radio" id="TestImage1_classifiedAs-2" name="TestImage-2-Classified-As" value="Katze" data-name="TestImage 2 Classified As" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="TestImage1_classifiedAs-2">Katze</span></label><label class="w-radio"><input type="radio" id="TestImage1" name="TestImage2_classifiedAs" value="Nacktmull" data-name="TestImage2_classifiedAs" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="TestImage1">Nacktmull</span></label></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4d2-0d889bda" class="w-layout-cell"><label for="name">Wie sicher ist sich die Teachable Machine bei dieser Einordnung?</label></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4d5-0d889bda" class="w-layout-cell"><input type="text" class="text-field w-input" maxlength="256" name="TestImage1_ConfScore-2" data-name="Test Image 1 Conf Score 2" placeholder="Dein Wert (z.B.: 94 %)" id="TestImage2_ConfScore" required=""></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4d7-0d889bda" class="w-layout-cell"><label for="name">Hat die Teachable Machine dieses Bild richtig eingeordnet?</label></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4da-0d889bda" class="w-layout-cell"><label class="w-radio"><input type="radio" id="Ja" name="TestImage2_classifiedCorrectly" value="Ja" data-name="TestImage2_classifiedCorrectly" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Ja">Ja</span></label><label class="w-radio"><input type="radio" id="Nein" name="TestImage2_classifiedCorrectly" value="Nein" data-name="TestImage2_classifiedCorrectly" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Nein">Nein</span></label></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4e3-0d889bda" class="w-layout-cell"><label for="name">Mögliche Gründe für die richtige bzw. falsche Einordnung:</label></div>
+            <div id="w-node-_473a0eec-f598-1aed-2dee-6636606af4e6-0d889bda" class="w-layout-cell"><textarea id="TestImage2_reasons" name="TestImage1_reasons-2" maxlength="5000" data-name="Test Image 1 Reasons 2" placeholder="Deine Antwort" required="" class="text-field w-input"></textarea></div>
+          </div>
+          <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33b3-0d889bda" class="w-layout-layout quick-stack wf-layout-layout">
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33b4-0d889bda" class="w-layout-cell"><label for="name">Wie klassifiziert die Teachable Machine dieses Testbild?</label></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33b7-0d889bda" class="w-layout-cell"><img sizes="100vw" height="200" src="images/Testbild_03_C3.jpg" loading="lazy" alt="" srcset="images/Testbild_03_C3-p-500.jpg 500w, images/Testbild_03_C3.jpg 700w"></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33b9-0d889bda" class="w-layout-cell"><label class="w-radio"><input type="radio" id="TestImage1_classifiedAs-2" name="TestImage3_classifiedAs" value="Katze" data-name="TestImage3_classifiedAs" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="TestImage1_classifiedAs-2">Katze</span></label><label class="w-radio"><input type="radio" id="TestImage1" name="TestImage3_classifiedAs" value="Nacktmull" data-name="TestImage3_classifiedAs" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="TestImage1">Nacktmull</span></label></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33c2-0d889bda" class="w-layout-cell"><label for="name">Wie sicher ist sich die Teachable Machine bei dieser Einordnung?</label></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33c5-0d889bda" class="w-layout-cell"><input type="text" class="text-field w-input" maxlength="256" name="TestImage1_ConfScore-2" data-name="Test Image 1 Conf Score 2" placeholder="Dein Wert (z.B.: 94 %)" id="TestImage3_ConfScore" required=""></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33c7-0d889bda" class="w-layout-cell"><label for="name">Hat die Teachable Machine dieses Bild richtig eingeordnet?</label></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33ca-0d889bda" class="w-layout-cell"><label class="w-radio"><input type="radio" id="Ja" name="TestImage3_classifiedCorrectly" value="Ja" data-name="TestImage3_classifiedCorrectly" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Ja">Ja</span></label><label class="w-radio"><input type="radio" id="Nein" name="TestImage3_classifiedCorrectly" value="Nein" data-name="TestImage3_classifiedCorrectly" required="" class="w-form-formradioinput w-radio-input"><span class="w-form-label" for="Nein">Nein</span></label></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33d3-0d889bda" class="w-layout-cell"><label for="name">Mögliche Gründe für die richtige bzw. falsche Einordnung:</label></div>
+            <div id="w-node-_107253a7-c9a9-733b-490c-fdffb98d33d6-0d889bda" class="w-layout-cell"><textarea id="TestImage3_reasons" name="TestImage1_reasons-2" maxlength="5000" data-name="Test Image 1 Reasons 2" placeholder="Deine Antwort" required="" class="text-field w-input"></textarea></div>
+          </div>
+          <div id="w-node-_4fa8e6ae-9c0d-cd5d-7eec-69c66e571080-0d889bda" class="w-layout-layout quick-stack-2 wf-layout-layout">
+            <div id="w-node-_757a19c5-aa29-2616-7940-56d3c90c7897-0d889bda" class="w-layout-cell"><label for="name">Aus welchen drei Komponenten besteht ein KI-System?</label></div>
+            <div id="w-node-cda6ecf0-4dae-1fda-c8d7-75987d25f66a-0d889bda" class="w-layout-cell"><label class="w-checkbox"><input type="checkbox" id="component_VR-Brille" name="component_VR-Brille" data-name="component_VR-Brille" class="w-checkbox-input"><span class="w-form-label" for="component_VR-Brille">VR-Brille</span></label><label class="w-checkbox"><input type="checkbox" id="Component_Trainingsdaten" name="Component_Trainingsdaten" data-name="Component_Trainingsdaten" class="w-checkbox-input"><span class="w-form-label" for="Component_Trainingsdaten">Trainingsdaten</span></label><label class="w-checkbox"><input type="checkbox" id="Component_Chatbot" name="Component_Chatbot" data-name="Component_Chatbot" class="w-checkbox-input"><span class="w-form-label" for="Component_Chatbot">Chatbot</span></label><label class="w-checkbox"><input type="checkbox" id="component_Lernalgorithmus" name="Component_Lernalgorithmus" data-name="Component_Lernalgorithmus" class="w-checkbox-input"><span class="w-form-label" for="Component_Lernalgorithmus">Lernalgorithmus</span></label><label class="w-checkbox"><input type="checkbox" id="Component_Vorhersage" name="Component_Vorhersage" data-name="Component_Vorhersage" class="w-checkbox-input"><span class="w-form-label" for="Component_Vorhersage">Vorhersage</span></label><label class="w-checkbox"><input type="checkbox" id="component_Klasse" name="Component_Klasse" data-name="Component_Klasse" class="w-checkbox-input"><span class="w-form-label" for="Component_Klasse">Klasse</span></label></div>
+            <div id="w-node-_8249ea67-2b38-9088-8cd9-7cba5b4acae0-0d889bda" class="w-layout-cell"><label for="name">Welche Funktion haben die Trainingsdaten?</label></div>
+            <div id="w-node-_616aeb6b-4be1-dead-9593-1c11e91ba540-0d889bda" class="w-layout-cell"><textarea id="Funktion-Trainingsdaten-3" name="Funktion-Trainingsdaten" maxlength="5000" data-name="Funktion Trainingsdaten" placeholder="Deine Antwort" required="" class="text-field w-input"></textarea></div>
+            <div id="w-node-_4f520742-aedf-c5d0-19de-519ed7346921-0d889bda" class="w-layout-cell"><label for="name">Was drückt die Prozentzahl (Confidence Score) aus?</label></div>
+            <div id="w-node-e210d3c5-d774-a88a-6762-0dab9e9ac400-0d889bda" class="w-layout-cell"><textarea id="Funktion-Trainingsdaten-4" name="Funktion-Trainingsdaten-4" maxlength="5000" data-name="Funktion Trainingsdaten 4" placeholder="Deine Antwort" required="" class="text-field w-input"></textarea></div>
+            <div id="w-node-dd4102af-593b-aa30-fd6d-0c784c0fcca1-0d889bda" class="w-layout-cell"><label for="name">Woher kennt das System die Begriffe &quot;Katze&quot; und &quot;Nacktmull&quot;?</label></div>
+            <div id="w-node-d133071b-7e37-ef4d-db78-1c078b7c811a-0d889bda" class="w-layout-cell"><textarea id="Funktion-Trainingsdaten-4" name="Funktion-Trainingsdaten-4" maxlength="5000" data-name="Funktion Trainingsdaten 4" placeholder="Deine Antwort" required="" class="text-field w-input"></textarea></div>
+            <div id="w-node-_0ed095b0-59bd-07ba-65e8-17cc4056416f-0d889bda" class="w-layout-cell"><label for="name">Warum darf man nicht dieselben Bilder, die das KI-System einordnen soll, auch schon zum Training des Modells verwenden?</label></div>
+            <div id="w-node-_7481c3bf-770e-dfd9-3694-653de2ed6b5d-0d889bda" class="w-layout-cell"><textarea id="Funktion-Trainingsdaten-4" name="Funktion-Trainingsdaten-4" maxlength="5000" data-name="Funktion Trainingsdaten 4" placeholder="Deine Antwort" required="" class="text-field w-input"></textarea></div>
+          </div><label for="email" class="field-label">Sind alle Aufgaben erfüllt?</label>
+          <div class="formlabelsubtext">Wenn ja, gib hier das Code-Wort ein, <br>das Du von der Moderatorin oder dem Moderator erhalten hast:</div><input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="" id="email" required=""><input type="submit" value="Antworten einreichen" data-wait="Please wait..." class="button-3 w-button">
+        </form>
+        <div class="w-form-done">
+          <div>Danke! Deine Eingaben wurden registriert.</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Uups! Etwas ist schief gegangen beim Absenden dieses Formulars.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-references">
+    <div class="container w-container">
+      <div class="rich-text-block-normal w-richtext">
+        <h4>Bildquellen:</h4>
+        <blockquote>‍<a href="https://www.flaticon.com/free-icons">Freunde besteigen einen Berg<br>Tippen Mann Animation<br>Icons von Freepik - Flaticon</a>
+        </blockquote>
+        <p>‍</p>
+      </div>
+    </div>
+  </section>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=649991c991e6e740cb1e84ea" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
